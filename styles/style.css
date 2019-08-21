@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.headline {
+  width: 398px;
+  height: 41px;
+  font-family: 'Manrope';
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.27px;
+  color: #181648;
+}
+
+.headlineDescr {
+  width: 331px;
+  height: 20px;
+  font-family: 'Manrope';
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.2px;
+  color: #686c8b;
+}
+
+.smallcard {
+  display: flex;
+  width: 350px;
+  height: 155px;
+  border-radius: 7px;
+  box-shadow: 0 11px 24px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.cardscontainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardImage {
+  margin: 24px;
+}
+
+.cardContentHeader {
+  width: 94px;
+  height: 27px;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #181648;
+}
+
+.cardContentDescr {
+  width: 139px;
+  height: 28px;
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.15px;
+  color: #686c8b;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 51px;
+}
+
+.mobileAppCard {
+  width: 540px;
+  height: 412px;
+  margin-top: 200px;
+  background-color: #f6f7f9;
+}
+
+.mainContent {
+  padding: 0 165px 425px;
+}
+
+.mobilePhoneImage {
+  width: 487px;
+  height: 489px;
+  margin-top: -56px;
+  margin-left: 43px;
+}
+
+.mobileAppContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileAppDownloadDescription {
+  margin: 74px 64px;
+  width: 413px;
+  height: 171px;
+  font-family: Manrope;
+  font-size: 41px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.37px;
+  text-align: center;
+  color: #323030;
+}
+
+.MobileAppDownloadContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.MobileAppButtonContainer {
+  display: flex;
+  align-self: center;
+}
+
+.button {
+  display: flex;
+  cursor: pointer;
+  margin: auto;
+  width: 133px;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0 3px 22px 0 rgba(0, 0, 0, 0.1);
+  background-color: #17c0ae;
+}
+
+.button-pink {
+  margin-left: 15px;
+  background-color: #f678a5;
+}
+
+.buttonContent {
+  width: 133px;
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  text-align: center;
+}
+
+.maklerCardsDescription {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+.maklerCard {
+  width: 350px;
+  height: 460px;
+  display: flex;
+  border-radius: 7px;
+  box-shadow: 0 11px 24px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.maklerCardsHeading {
+  width: 264px;
+  height: 41px;
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.27px;
+  color: #181648;
+}
+
+.maklerCardsCaption {
+  width: 331px;
+  height: 20px;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.2px;
+  color: #686c8b;
+  margin-bottom: 34px;
+}
+
+.maklerCardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#maklerPhoto {
+  width: 194px;
+  height: 194px;
+}
+
+#companyLogo {
+  width: 148px;
+  height: 22px;
+  margin: 30px 0 25px;
+}
+
+.maklerName {
+  width: 224px;
+  height: 41px;
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #313453;
+  margin-bottom: 10px;
+}
+
+.maklersCompanyDescr {
+  width: 210px;
+  height: 22px;
+  font-family: Manrope;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-align: center;
+  color: #29cad8;
+  text-transform: uppercase;
+}
+
+.maklerDeals {
+  width: 165px;
+  height: 33px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.4;
+  letter-spacing: -0.17px;
+  color: #181648;
+  text-align: center;
+  margin-top: -7px;
+}
+
+.maklersLastDeal {
+  width: 66px;
+  height: 29px;
+  font-family: Manrope;
+  font-size: 9px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.22;
+  letter-spacing: 0.11px;
+  text-align: center;
+  color: #7d7b99;
+  margin-top: -11px;
+}
