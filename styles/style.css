@@ -3,6 +3,32 @@
   padding: 0;
 }
 
+.mobileHeadline {
+  width: 111px;
+  height: 35px;
+  font-family: Manrope;
+  font-size: 25px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.23px;
+  color: #181648;
+}
+
+.mobileHeadlineDescr {
+  width: 331px;
+  height: 20px;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: 0.2px;
+  color: #686c8b;
+}
+
 .headline {
   width: 398px;
   height: 41px;
@@ -30,8 +56,9 @@
 }
 
 .smallcard {
+  width: 30%;
   display: flex;
-  width: 350px;
+  margin: 10px;
   height: 155px;
   border-radius: 7px;
   box-shadow: 0 11px 24px 0 rgba(0, 0, 0, 0.1);
@@ -42,6 +69,8 @@
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  margin-left: -10px;
+  flex-wrap: wrap;
 }
 
 .cardImage {
@@ -81,14 +110,14 @@
 }
 
 .mobileAppCard {
-  width: 540px;
+  width: 46%;
   height: 412px;
-  margin-top: 200px;
+  margin: 200px 10px 0;
   background-color: #f6f7f9;
 }
 
 .mainContent {
-  padding: 0 165px 425px;
+  padding: 0 100px 425px;
 }
 
 .mobilePhoneImage {
@@ -101,6 +130,8 @@
 .mobileAppContent {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -10px;
 }
 
 .mobileAppDownloadDescription {
@@ -176,6 +207,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 
 .maklerCardsHeading {
@@ -207,7 +239,9 @@
 
 .maklerCardContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: -10px;
 }
 
 #maklerPhoto {
@@ -278,4 +312,150 @@
   text-align: center;
   color: #7d7b99;
   margin-top: -11px;
+}
+
+.mobileHeadlineContainer {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .mobileHeadlineContainer {
+    display: block;
+  }
+
+  .cardsAppContainer {
+    justify-content: center;
+  }
+  
+  .mainContent {
+    padding: unset;
+  }
+
+  .headlineContainer {
+    display: none;
+  }
+
+  .cardscontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .smallcard {
+    min-width: unset;
+    width: 139px !important;
+    height: 203px;
+    border-radius: 7px;
+    flex-direction: column;
+    box-shadow: 0 11px 24px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+
+  .cardImage {
+    object-fit: contain;
+    width: 79px;
+    height: 79px;
+    margin-top: 23px;
+    align-self: center;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 51px; */
+    align-self: center;
+    margin: 0;
+  }
+
+  .cardsAppContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardContentDescr {
+    width: 94px;
+    height: 28px;
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 0.15px;
+    color: #686c8b;
+    align-self: center;
+  }
+
+  .mobileAppContent,
+  .maklerCardContainer,
+  .maklerCardsDescription,
+  .headlineContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 1430px) {
+  .mobileAppContent,
+  .cardscontainer,
+  .maklerCardContainer {
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 1150px) {
+  .smallcard {
+    width: 325px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mobileAppContent {
+    display: none;
+  }
+
+  .cardscontainer {
+    flex-direction: unset !important;
+    justify-content: center;
+  }
+
+  .smallcard:first-child {
+    margin: 10px !important;
+  }
+
+  .maklerCardContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1309px) {
+  .mobileAppCard {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 71px;
+    height: 44%;
+  }
+
+  .smallcard {
+    width: unset;
+  }
+
+  .smallcard:first-child {
+    margin-top: 29px;
+  }
+
+  .cardscontainer {
+    flex-direction: column;
+  }
+
+  .cardsAppContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .mobilePhoneImage {
+    width: 84%;
+    height: 120%;
+}
+  }
 }
